@@ -1,6 +1,6 @@
 {
   "name": "@peopleticker/react-scripts",
-  "version": "0.0.3b",
+  "version": "0.0.3b2",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebookincubator/create-react-app",
   "license": "BSD-3-Clause",
