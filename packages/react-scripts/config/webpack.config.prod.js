@@ -178,7 +178,8 @@ module.exports = {
           presets: [require.resolve('babel-preset-react-app')],
           // @remove-on-eject-end
           compact: true,
-        plugins: [require.resolve('babel-plugin-relay')],},
+          plugins: [require.resolve('babel-plugin-relay')],
+        },
       },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.
