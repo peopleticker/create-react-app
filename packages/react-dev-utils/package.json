@@ -1,6 +1,6 @@
 {
   "name": "@peopleticker/react-dev-utils",
-  "version": "3.0.2",
+  "version": "3.0.3pt",
   "description": "Webpack utilities used by Create React App",
   "repository": "peopleticker/create-react-app",
   "license": "BSD-3-Clause",
