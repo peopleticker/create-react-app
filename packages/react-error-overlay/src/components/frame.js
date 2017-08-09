@@ -291,6 +291,9 @@ function createFrame(
             window.encodeURIComponent(sourceFileName) +
             '&lineNumber=' +
             window.encodeURIComponent(sourceLineNumber || 1)
+          ,{
+            credentials: 'same-origin',
+          }
         ).then(() => {}, () => {});
       };
     }
