@@ -10,8 +10,8 @@
 // @remove-on-eject-end
 'use strict';
 
-const errorOverlayMiddleware = require('react-error-overlay/middleware');
-const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
+const errorOverlayMiddleware = require('@peopleticker/react-error-overlay/middleware');
+const noopServiceWorkerMiddleware = require('@peopleticker/react-dev-utils/noopServiceWorkerMiddleware');
 const config = require('./webpack.config.dev');
 const paths = require('./paths');
 
