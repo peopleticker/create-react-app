@@ -1,6 +1,6 @@
 {
   "name": "@peopleticker/react-error-overlay",
-  "version": "1.0.10-pt-2",
+  "version": "1.0.10-pt-3",
   "description": "An overlay for displaying stack frames.",
   "main": "lib/index.js",
   "scripts": {
