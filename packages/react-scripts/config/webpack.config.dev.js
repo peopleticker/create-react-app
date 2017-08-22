@@ -191,11 +191,17 @@ module.exports = {
           {
             test: /\.s?css$/,
             use: [
-              require.resolve('style-loader'),
+              {
+                loader: require.resolve('style-loader'),
+                options: {
+                  sourceMap: true,
+                }
+              },
               {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  sourceMap: true,
                 },
               },
               {
@@ -216,6 +222,7 @@ module.exports = {
                       flexbox: 'no-2009',
                     }),
                   ],
+                  sourceMap: true,
                 },
               },
               {
