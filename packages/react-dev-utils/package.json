@@ -1,6 +1,6 @@
 {
   "name": "@peopleticker/react-dev-utils",
-  "version": "5.0.1-1",
+  "version": "5.0.1-2",
   "description": "Webpack utilities used by Create React App",
   "repository": "peopleticker/create-react-app",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "webpackHotDevClient.js"
   ],
   "dependencies": {
-    "@peopleticker/react-error-overlay": "^4.0.1-1",
+    "@peopleticker/react-error-overlay": "^4.0.1-2",
     "address": "1.0.3",
     "babel-code-frame": "6.26.0",
     "chalk": "1.1.3",
