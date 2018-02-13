@@ -170,7 +170,12 @@ module.exports = {
               babelrc: false,
               presets: [require.resolve('babel-preset-react-app')],
               // @remove-on-eject-end
-              plugins: [[require.resolve('babel-plugin-relay'), {schema: paths.appPath + "/schema.graphql"}],],// @remove-on-eject-end
+              plugins: [
+                [
+                  require.resolve('babel-plugin-relay'),
+                  { schema: paths.appPath + '/schema.graphql' },
+                ],
+              ], // @remove-on-eject-end
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
               // directory for faster rebuilds.
@@ -186,9 +191,10 @@ module.exports = {
             test: /\.s?css$/,
             use: [
               {
-                loader: require.resolve('style-loader'), options: {
+                loader: require.resolve('style-loader'),
+                options: {
                   sourceMap: true,
-                }
+                },
               },
               {
                 loader: require.resolve('css-loader'),
@@ -214,15 +220,16 @@ module.exports = {
                       ],
                       flexbox: 'no-2009',
                     }),
-                  ], sourceMap: true,
+                  ],
+                  sourceMap: true,
                 },
               },
               {
                 loader: require.resolve('sass-loader'),
                 options: {
-                  sourceMap: true
-                }
-              }
+                  sourceMap: true,
+                },
+              },
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.

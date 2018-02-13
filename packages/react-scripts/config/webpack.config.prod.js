@@ -238,8 +238,8 @@ module.exports = {
                       loader: require.resolve('sass-loader'),
                       options: {
                         sourceMap: shouldUseSourceMap,
-                      }
-                    }
+                      },
+                    },
                   ],
                 },
                 extractTextPluginOptions

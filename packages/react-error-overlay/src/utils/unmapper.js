@@ -39,9 +39,9 @@ async function unmap(
   let fileContents = typeof _fileUri === 'object' ? _fileUri.contents : null;
   let fileUri = typeof _fileUri === 'object' ? _fileUri.uri : _fileUri;
   if (fileContents == null) {
-    fileContents = await fetch(fileUri,{
-        credentials: 'same-origin',
-      }).then(res => res.text());
+    fileContents = await fetch(fileUri, {
+      credentials: 'same-origin',
+    }).then(res => res.text());
   }
   const map = await getSourceMap(fileUri, fileContents);
   return frames.map(frame => {

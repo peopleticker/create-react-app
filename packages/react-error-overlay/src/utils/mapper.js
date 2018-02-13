@@ -34,9 +34,9 @@ async function map(
   });
   await settle(
     files.map(async fileName => {
-      const fileSource = await fetch(fileName,{
-          credentials: 'same-origin',
-        }).then(r => r.text());
+      const fileSource = await fetch(fileName, {
+        credentials: 'same-origin',
+      }).then(r => r.text());
       const map = await getSourceMap(fileName, fileSource);
       cache[fileName] = { fileSource, map };
     })

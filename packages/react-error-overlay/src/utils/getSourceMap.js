@@ -120,8 +120,8 @@ async function getSourceMap(
     const index = fileUri.lastIndexOf('/');
     const url = fileUri.substring(0, index + 1) + sm;
     const obj = await fetch(url, {
-        credentials: 'same-origin',
-      }).then(res => res.json());
+      credentials: 'same-origin',
+    }).then(res => res.json());
     return new SourceMap(new SourceMapConsumer(obj));
   }
 }
