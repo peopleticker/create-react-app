@@ -30,8 +30,8 @@
     "lib/index.js"
   ],
   "devDependencies": {
-    "@peopleticker/eslint-config-react-app": "^2.1.0",
     "@peopleticker/babel-preset-react-app": "^3.1.1",
+    "@peopleticker/eslint-config-react-app": "^2.1.0",
     "anser": "1.4.4",
     "babel-code-frame": "6.26.0",
     "babel-core": "^6.26.0",
