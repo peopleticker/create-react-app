@@ -145,7 +145,7 @@ E2E_URL="http://localhost:3001" \
   REACT_APP_SHELL_ENV_MESSAGE=fromtheshell \
   CI=true NODE_PATH=src \
   NODE_ENV=development \
-  node_modules/.bin/mocha --require babel-register --require babel-polyfill integration/*.test.js
+  node_modules/.bin/mocha --require babel-register --require babel-polyfill integration/*.test.js || bash
 
 # Test "production" environment
 E2E_FILE=./build/index.html \

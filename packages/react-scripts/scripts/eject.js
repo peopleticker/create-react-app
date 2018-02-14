@@ -207,13 +207,13 @@ inquirer
     // Add Babel config
     console.log(`  Adding ${cyan('Babel')} preset`);
     appPackage.babel = {
-      presets: ['react-app'],
+      presets: ['@peopleticker/babel-preset-react-app'],
     };
 
     // Add ESlint config
     console.log(`  Adding ${cyan('ESLint')} configuration`);
     appPackage.eslintConfig = {
-      extends: 'react-app',
+      extends: '@peopleticker/eslint-config-react-app',
     };
 
     fs.writeFileSync(
