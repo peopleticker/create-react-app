@@ -1,6 +1,6 @@
 {
   "name": "@peopleticker/react-dev-utils",
-  "version": "5.0.2-0",
+  "version": "5.0.2-1",
   "description": "Webpack utilities used by Create React App",
   "repository": "peopleticker/create-react-app",
   "license": "MIT",
