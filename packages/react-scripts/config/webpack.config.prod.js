@@ -239,6 +239,16 @@ module.exports = {
                       },
                     },
                     {
+                      loader: require.resolve('resolve-url-loader'),
+                      options: {
+                        sourceMap: true,
+                        keepQuery: true,
+                        root: paths.appSrc,
+                        attempts: 1,
+                        fail: true,
+                      },
+                    },
+                    {
                       loader: require.resolve('sass-loader'),
                       options: {
                         sourceMap: shouldUseSourceMap,
